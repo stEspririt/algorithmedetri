@@ -1,0 +1,14 @@
+PROCEDURE tri(VAR arr : ARRAY_OF INTEGER)
+VAR
+    i,j,n: INTEGER;
+BEGIN
+  n := arr.length;
+   FOR i FROM 0 TO n-1 STEP 1  DO
+           IF (arr[i] > arr[i+1]) THEN
+               j = arr[i+1]
+               arr[i+1] = arr[i]
+           END_IF
+           arr[i] = j
+   END_FOR
+
+END
